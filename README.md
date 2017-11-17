@@ -11,6 +11,6 @@ yarn start
 ```
 # Before you start hacking
 - create facebook developer account and add project
-- create firebase account and new project
+- create firebase account and add new project
 - select firestore and enable Facebook auth
 - update App.js with your firebase account details
