@@ -3,10 +3,10 @@ import * as firebase from "firebase";
 
 // should go in a secret file
 firebase.initializeApp({
-  apiKey: "",
-  authDomain: "xxxx-xxxxx.firebaseapp.com",
-  databaseURL: "https://xxxx-xxxxx.firebaseio.com",
-  projectId: "xxxx-xxxx"
+  apiKey: process.env.REACT_FIREBASE_APIKEY,
+  authDomain: process.env.REACT_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_FIREBASE_DB,
+  projectId: process.env.REACT_PROJECT_ID
 });
 
 export const firestore = firebase.firestore();
